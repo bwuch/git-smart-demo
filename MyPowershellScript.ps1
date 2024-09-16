@@ -3,6 +3,7 @@
 Get-Module -ListAvailable
 
 # I bet getting all processes would be as easy as
-Get-Processes
+# Per Issue #2 - this should be singular but I'm going to fix it and add a typo so that bwuch will reject it
+Get-Processtypo or 2
 
 #This is the end of my script.
