@@ -14,4 +14,8 @@ jobs:
       - name: Print something
         run: echo "Self-hosted runner is working!"
       - name: Run command
-        run: source kasa-env/bin/activate; kasa --host 192.168.127.197 feature
+        run: |
+          python3 -m venv kasa-env
+          source /tmp/runner/kasa-env/bin/activate
+          pip install python-kasa
+          kasa --host 192.168.127.197 feature
