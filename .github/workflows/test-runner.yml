@@ -22,4 +22,4 @@ jobs:
         run: |
           source /tmp/runner/kasa-env/bin/activate
           pip install python-kasa
-          kasa --host 192.168.127.197 on
+          kasa --host 192.168.127.197 toggle
